@@ -18,4 +18,13 @@ export class HomeComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {}
+
+    scroll() {
+        let e = document.getElementById("about");
+            e.scrollIntoView({
+              block: 'end',
+              behavior: 'smooth',
+              inline: 'center'
+            });
+      }
 }
