@@ -62,4 +62,5 @@ export class NavbarComponent implements OnInit {
             window.location.href = "../assets/tarifas/20220720_PEREZROMERO_SVQ_DEST_prices.xlsx";
         }
     }
+
 }

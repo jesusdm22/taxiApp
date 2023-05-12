@@ -27,42 +27,51 @@
       </div>
       <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
         <li class="nav-item dropdown">
-          <a class="nav-link no-caret" href="assets/tarifas/20220720_PEREZROMERO_SVQ_DEST_prices.xlsx">
+          <a class="nav-link no-caret" href="../../assets/tarifas/TARIFAS2023.xlsx" target="_blank">
             <i class="ni ni-ui-04 d-lg-none"></i>
             <span class="nav-link-inner--text">Tarifas</span>
           </a>
 
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link no-caret" (click)="locked()">
-            <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">Guías turísticas</span>
-            <!--TODO: Dropdown aqui con guias turiticas en diferentes idiomas-->
-          </a>
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item" ngbDropdown placement="bottom-right">
+              <a class="nav-link"  ngbDropdownToggle>
+                <span>Guías turísticas</span>
+              </a>
+              <div class="dropdown-menu-right" aria-labelledby="navbar-success_dropdown_1" ngbDropdownMenu>
+                <a class="dropdown-item" href="../../../assets/guias/spanish_locked.pdf" target="_blank">Spanish
+                  <i class="fa fa-download" style="float: right;"></i>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../../../assets/guias/english_locked.pdf" target="_blank">English
+                  <i class="fa fa-download" style="float: right;"></i>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../../../assets/guias/french_locked.pdf" target="_blank">French
+                  <i class="fa fa-download" style="float: right;"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
         </li>
       </ul>
       <ul class="navbar-nav align-items-lg-center ml-lg-auto">
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://www.facebook.com/#" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
-            <i class="fa fa-facebook-square"></i>
-            <span class="nav-link-inner--text d-lg-none">Facebook</span>
+          <a class="nav-link nav-link-icon" href="https://wa.me/34674982801?text=Hola,%20estoy%20interesado%20en%20contratar%20sus%20servicios" target="_blank" data-toggle="tooltip" title="WhatsApp">
+            <i class="fa fa-whatsapp"></i>
+            <span class="nav-link-inner--text d-lg-none">WhatsApp</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-link-icon" href="https://www.instagram.com/#" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
+          <a class="nav-link nav-link-icon" href="https://www.instagram.com/lexustaxisevilla/" target="_blank" data-toggle="tooltip" title="Follow us on Instagram">
             <i class="fa fa-instagram"></i>
             <span class="nav-link-inner--text d-lg-none">Instagram</span>
           </a>
         </li>
-        <li class="nav-item d-none d-lg-block ml-lg-4">
-          <a href="https://wa.me/34674982801?text=Hola,%20estoy%20interesado%20en%20contratar%20sus%20servicios" class="btn btn-neutral btn-icon">
-            <span class="btn-inner--icon">
-              <i class="fa fa-calendar mr-2"></i>
-            </span>
-            <span class="nav-link-inner--text">RESERVA AHORA</span>
-          </a>
-        </li>
       </ul>
+
+      
     </div>
   </div>
 </nav>
